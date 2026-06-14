@@ -41,6 +41,8 @@ public class AddMedActivity extends AppCompatActivity {
         spinnerIconType = findViewById(R.id.spinner_icon_type);
         Button btnSave = findViewById(R.id.btn_save);
 
+        findViewById(R.id.btn_back).setOnClickListener(v -> finish());
+
         ArrayAdapter<CharSequence> iconAdapter = ArrayAdapter.createFromResource(
                 this, R.array.icon_types, android.R.layout.simple_spinner_item);
         iconAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

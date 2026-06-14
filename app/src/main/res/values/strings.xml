@@ -32,7 +32,8 @@
     <string name="med_icon_desc">药品图标</string>
 
     <!-- Add Med -->
-    <string name="add_med_title">添加药品</string>
+    <string name="add_med_title">添加服药计划</string>
+    <string name="content_desc_back">返回</string>
     <string name="edit_med_title">编辑药品</string>
     <string name="confirm_delete_title">删除确认</string>
     <string name="confirm_delete_message">确定要删除该用药提醒吗？</string>
@@ -52,7 +53,7 @@
     <string name="history_title">服药历史</string>
     <string name="history_empty">暂无服药打卡记录</string>
     <string name="history_item_format">%1$s · %2$s</string>
-    <string name="label_med_name">药名</string>
+    <string name="label_med_name">药品名称</string>
     <string name="hint_med_name">请输入药品名称</string>
     <string name="label_dosage">用量</string>
     <string name="hint_dosage">如：1片、5ml</string>
