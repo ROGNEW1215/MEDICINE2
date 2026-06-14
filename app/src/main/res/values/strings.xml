@@ -44,13 +44,20 @@
     <string name="btn_health_log">健康打卡</string>
     <string name="btn_history">服药历史</string>
     <string name="health_log_title">健康打卡记录</string>
-    <string name="label_systolic">收缩压 (mmHg)</string>
-    <string name="label_diastolic">舒张压 (mmHg)</string>
-    <string name="hint_systolic">如：120</string>
-    <string name="hint_diastolic">如：80</string>
+    <string name="health_log_page_title">健康打卡</string>
+    <string name="health_record_bp_title">记录今日血压</string>
+    <string name="health_tip_title">长者血压参考范围</string>
+    <string name="health_tip_body">高压 (收缩压) 正常值约为 90 - 139 mmHg。\n低压 (舒张压) 正常值约为 60 - 89 mmHg。\n保持心情平稳时测量更准确哦。</string>
+    <string name="btn_save_health_record">保存今日记录</string>
+    <string name="label_systolic">收缩压 (高压)</string>
+    <string name="label_systolic_unit">mmHg</string>
+    <string name="label_diastolic">舒张压 (低压)</string>
+    <string name="label_diastolic_unit">mmHg</string>
+    <string name="hint_systolic">例如: 120</string>
+    <string name="hint_diastolic">例如: 80</string>
     <string name="health_save_success">健康记录已保存</string>
     <string name="error_invalid_blood_pressure">请输入有效的血压数值</string>
-    <string name="history_title">服药历史</string>
+    <string name="history_title">服药历史记录</string>
     <string name="history_empty">暂无服药打卡记录</string>
     <string name="history_item_format">%1$s · %2$s</string>
     <string name="label_med_name">药品名称</string>
@@ -72,6 +79,9 @@
 
     <!-- Settings -->
     <string name="settings_title">个人设置</string>
+    <string name="settings_section_basic_info">基本信息</string>
+    <string name="settings_section_emergency">紧急联系人</string>
+    <string name="btn_save_settings">保存设置</string>
     <string name="label_elder_name">长辈姓名</string>
     <string name="hint_elder_name">请输入姓名</string>
     <string name="label_emergency_phone">紧急联系人电话</string>
@@ -79,11 +89,12 @@
     <string name="settings_saved">设置已保存</string>
 
     <!-- Emergency -->
-    <string name="emergency_title">紧急呼叫</string>
-    <string name="emergency_contact_label">紧急联系人</string>
+    <string name="emergency_title">紧急呼救</string>
+    <string name="emergency_contact_label">已绑定紧急联系人</string>
     <string name="emergency_no_phone">未设置紧急联系人电话，请先在设置中填写</string>
-    <string name="btn_call_emergency">一键拨打</string>
+    <string name="btn_call_emergency">立即拨打</string>
     <string name="emergency_call_desc">紧急呼叫图标</string>
+    <string name="emergency_hint">点击下方按钮将立即拨打该电话。\n若情况危急，请直接拨打 120。</string>
 
     <!-- Alarm -->
     <string name="alarm_action">com.example.medicine.ALARM_ACTION</string>

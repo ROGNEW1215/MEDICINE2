@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>紧急呼救 UI 演示</title>
+  <style>
+    body { background-color: #e5e7eb; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+    /* 模拟手机外壳 */
+    .mobile-frame { width: 375px; height: 812px; background: #f8fafc; border-radius: 40px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); overflow: hidden; position: relative; border: 8px solid #1e293b; display: flex; flex-direction: column; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body>
+
+  <div class="mobile-frame">
+    
+    <div class="px-5 pt-14 pb-8 bg-gradient-to-br from-red-500 to-rose-600 text-white rounded-b-[2.5rem] shadow-lg relative z-10">
+      <div class="flex items-center space-x-3">
+        <button class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm active:scale-90 transition">
+           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+        <h1 class="text-2xl font-bold tracking-tight">紧急呼救</h1>
+      </div>
+    </div>
+
+    <div class="flex-1 px-6 py-10 flex flex-col items-center overflow-y-auto no-scrollbar bg-slate-50">
+      
+      <div class="relative w-40 h-40 flex items-center justify-center mb-10 mt-4">
+         <div class="absolute inset-0 bg-red-200 rounded-full animate-ping opacity-60"></div>
+         <div class="absolute inset-4 bg-red-300 rounded-full opacity-80"></div>
+         <div class="relative w-24 h-24 bg-red-500 rounded-full flex items-center justify-center shadow-2xl shadow-red-500/50 border-4 border-white">
+            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+         </div>
+      </div>
+
+      <div class="w-full bg-white rounded-3xl p-8 shadow-sm border border-red-50 text-center relative overflow-hidden">
+         <div class="absolute -top-6 -right-6 w-20 h-20 bg-red-50 rounded-full opacity-50"></div>
+         
+         <p class="text-slate-400 font-medium text-sm mb-2">已绑定紧急联系人</p>
+         <h2 class="text-3xl font-extrabold text-slate-800 mb-2">王大爷的家属</h2>
+         <div class="inline-block bg-red-50 px-4 py-2 rounded-xl mt-2">
+            <p class="text-2xl text-red-600 font-bold tracking-wider">138-1234-5678</p>
+         </div>
+      </div>
+
+      <p class="text-slate-400 text-sm mt-8 text-center px-4">
+         点击下方按钮将立即拨打该电话。<br>若情况危急，请直接拨打 120。
+      </p>
+    </div>
+
+    <div class="px-5 pb-8 pt-4 bg-slate-50">
+       <button class="w-full bg-red-500 text-white font-bold text-2xl py-5 rounded-[2rem] shadow-xl shadow-red-500/30 active:scale-95 transition transform flex justify-center items-center space-x-3">
+          <svg class="w-8 h-8 animate-pulse" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+          <span>立 即 拨 打</span>
+       </button>
+    </div>
+  </div>
+
+</body>
+</html>

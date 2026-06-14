@@ -2,9 +2,9 @@ package com.example.medicine;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,11 +21,13 @@ public class AddMedActivity extends AppCompatActivity {
     private EditText etMedName;
     private EditText etDosage;
     private EditText etRemindTime;
-    private Spinner spinnerIconType;
+    private AutoCompleteTextView spinnerIconType;
     private TextView tvTitle;
     private DatabaseHelper dbHelper;
     private long editMedId = -1;
     private int existingAlarmId = -1;
+    private int selectedIconType = 0;
+    private ArrayAdapter<CharSequence> iconAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,10 +45,12 @@ public class AddMedActivity extends AppCompatActivity {
 
         findViewById(R.id.btn_back).setOnClickListener(v -> finish());
 
-        ArrayAdapter<CharSequence> iconAdapter = ArrayAdapter.createFromResource(
-                this, R.array.icon_types, android.R.layout.simple_spinner_item);
-        iconAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        iconAdapter = ArrayAdapter.createFromResource(
+                this, R.array.icon_types, R.layout.dropdown_item_icon_type);
         spinnerIconType.setAdapter(iconAdapter);
+        spinnerIconType.setText(iconAdapter.getItem(0), false);
+        spinnerIconType.setOnItemClickListener((parent, view, position, id) ->
+                selectedIconType = position);
 
         if (getIntent().hasExtra(EXTRA_MED_ID)) {
             editMedId = getIntent().getLongExtra(EXTRA_MED_ID, -1);
@@ -66,7 +70,8 @@ public class AddMedActivity extends AppCompatActivity {
         etMedName.setText(medication.getMedName());
         etDosage.setText(medication.getDosage());
         etRemindTime.setText(medication.getRemindTime());
-        spinnerIconType.setSelection(medication.getIconType());
+        selectedIconType = medication.getIconType();
+        spinnerIconType.setText(iconAdapter.getItem(selectedIconType), false);
         existingAlarmId = medication.getAlarmId();
     }
 
@@ -74,7 +79,7 @@ public class AddMedActivity extends AppCompatActivity {
         String medName = etMedName.getText().toString().trim();
         String dosage = etDosage.getText().toString().trim();
         String remindTime = etRemindTime.getText().toString().trim();
-        int iconType = spinnerIconType.getSelectedItemPosition();
+        int iconType = selectedIconType;
 
         if (medName.isEmpty() || dosage.isEmpty() || remindTime.isEmpty()) {
             Toast.makeText(this, R.string.error_empty_fields, Toast.LENGTH_SHORT).show();

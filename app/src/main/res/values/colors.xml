@@ -5,15 +5,20 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- 主色调：Teal / Emerald 渐变 -->
+    <color name="teal_50">#F0FDFA</color>
+    <color name="teal_100">#CCFBF1</color>
     <color name="teal_400">#34D399</color>
     <color name="teal_500">#14B8A6</color>
     <color name="teal_600">#0D9488</color>
     <color name="emerald_400">#34D399</color>
 
     <!-- 紧急呼叫强调色 -->
+    <color name="red_50">#FEF2F2</color>
+    <color name="red_100">#FEE2E2</color>
+    <color name="red_200">#FECACA</color>
+    <color name="red_300">#FCA5A5</color>
     <color name="red_500">#EF4444</color>
     <color name="red_600">#DC2626</color>
-    <color name="red_100">#FEE2E2</color>
 
     <!-- 页面与卡片背景 -->
     <color name="slate_50">#F8FAFC</color>

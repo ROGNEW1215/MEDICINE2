@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>服药历史 UI 演示</title>
+  <style>
+    body { background-color: #e5e7eb; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+    .mobile-frame { width: 375px; height: 812px; background: #f8fafc; border-radius: 40px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); overflow: hidden; position: relative; border: 8px solid #1e293b; display: flex; flex-direction: column; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body>
+
+  <div class="mobile-frame">
+    
+    <div class="px-5 pt-14 pb-8 bg-gradient-to-br from-teal-500 to-emerald-400 text-white rounded-b-[2.5rem] shadow-lg relative z-10 flex-shrink-0">
+      <div class="flex items-center space-x-3">
+        <button class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm active:scale-90 transition">
+           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+        <h1 class="text-2xl font-bold tracking-tight">服药历史记录</h1>
+      </div>
+    </div>
+
+    <div class="flex-1 px-5 pt-6 pb-8 overflow-y-auto no-scrollbar relative bg-slate-50">
+      
+      <div class="flex justify-between items-center mb-5 px-1">
+         <h2 class="text-slate-500 font-bold text-sm">最近打卡记录</h2>
+         <span class="bg-teal-100 text-teal-700 text-xs font-bold px-3 py-1 rounded-full">已坚持 15 天</span>
+      </div>
+
+      <div class="bg-white rounded-3xl p-5 mb-4 shadow-sm border border-slate-100 flex items-center transform transition hover:-translate-y-1 hover:shadow-md">
+         <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center text-teal-500 mr-4 flex-shrink-0">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+         </div>
+         
+         <div class="flex-1">
+            <h3 class="text-xl font-bold text-slate-800 mb-1">阿莫西林胶囊</h3>
+            <p class="text-slate-400 text-sm font-medium">2026年6月15日 09:05</p>
+         </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-5 mb-4 shadow-sm border border-slate-100 flex items-center transform transition hover:-translate-y-1 hover:shadow-md">
+         <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center text-teal-500 mr-4 flex-shrink-0">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+         </div>
+         <div class="flex-1">
+            <h3 class="text-xl font-bold text-slate-800 mb-1">降压药</h3>
+            <p class="text-slate-400 text-sm font-medium">2026年6月15日 08:00</p>
+         </div>
+      </div>
+
+      <div class="bg-slate-100/60 rounded-3xl p-5 mb-4 border border-slate-100 flex items-center opacity-80">
+         <div class="w-14 h-14 bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 mr-4 flex-shrink-0">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+         </div>
+         <div class="flex-1">
+            <h3 class="text-lg font-bold text-slate-600 mb-1">维生素 C</h3>
+            <p class="text-slate-400 text-sm font-medium">2026年6月14日 20:30</p>
+         </div>
+      </div>
+      
+      </div>
+  </div>
+
+</body>
+</html>

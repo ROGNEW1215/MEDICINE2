@@ -20,6 +20,8 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+        findViewById(R.id.btn_back).setOnClickListener(v -> finish());
+
         prefsHelper = new PrefsHelper(this);
 
         etElderName = findViewById(R.id.et_elder_name);

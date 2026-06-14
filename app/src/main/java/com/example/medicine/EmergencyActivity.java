@@ -22,6 +22,8 @@ public class EmergencyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency);
 
+        findViewById(R.id.btn_back).setOnClickListener(v -> finish());
+
         prefsHelper = new PrefsHelper(this);
 
         TextView tvContactName = findViewById(R.id.tv_contact_name);

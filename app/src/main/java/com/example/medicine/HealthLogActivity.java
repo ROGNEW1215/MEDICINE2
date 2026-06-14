@@ -32,6 +32,7 @@ public class HealthLogActivity extends AppCompatActivity {
         Button btnSave = findViewById(R.id.btn_save_health);
         Button btnViewHistory = findViewById(R.id.btn_view_history);
 
+        findViewById(R.id.btn_back).setOnClickListener(v -> finish());
         btnSave.setOnClickListener(v -> saveHealthRecord());
         btnViewHistory.setOnClickListener(v ->
                 startActivity(new Intent(this, HistoryActivity.class)));

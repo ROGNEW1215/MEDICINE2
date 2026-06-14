@@ -25,6 +25,8 @@ public class HistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
 
+        findViewById(R.id.btn_back).setOnClickListener(v -> finish());
+
         dbHelper = new DatabaseHelper(this);
         tvHistoryEmpty = findViewById(R.id.tv_history_empty);
         lvHistory = findViewById(R.id.lv_history);
