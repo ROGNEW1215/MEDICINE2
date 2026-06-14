@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- 基础色 -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="primary">#2196F3</color>
-    <color name="primary_dark">#1976D2</color>
-    <color name="background">#F5F5F5</color>
-    <color name="card_background">#FFFFFF</color>
-    <color name="text_primary">#1A1A1A</color>
-    <color name="text_secondary">#4B5563</color>
-    <color name="text_taken">#9E9E9E</color>
-    <color name="border_color">#BDBDBD</color>
-    <color name="checkbox_tint">#2196F3</color>
-    <color name="emergency_red">#DC2626</color>
-    <color name="emergency_red_dark">#B91C1C</color>
+
+    <!-- 主色调：Teal / Emerald 渐变 -->
+    <color name="teal_400">#34D399</color>
+    <color name="teal_500">#14B8A6</color>
+    <color name="teal_600">#0D9488</color>
+    <color name="emerald_400">#34D399</color>
+
+    <!-- 紧急呼叫强调色 -->
+    <color name="red_500">#EF4444</color>
+    <color name="red_600">#DC2626</color>
+    <color name="red_100">#FEE2E2</color>
+
+    <!-- 页面与卡片背景 -->
+    <color name="slate_50">#F8FAFC</color>
+    <color name="slate_100">#F1F5F9</color>
+    <color name="slate_200">#E2E8F0</color>
+    <color name="slate_400">#94A3B8</color>
+    <color name="slate_500">#64748B</color>
+    <color name="slate_800">#1E293B</color>
+
+    <!-- 半透明白色 -->
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+
+    <!-- 图标容器浅橙背景 -->
+    <color name="orange_50">#FFF7ED</color>
+    <color name="orange_100">#FFEDD5</color>
+
+    <!-- 语义别名（兼容现有布局引用） -->
+    <color name="primary">@color/teal_500</color>
+    <color name="primary_dark">@color/teal_600</color>
+    <color name="background">@color/slate_50</color>
+    <color name="card_background">@color/white</color>
+
+    <!-- 文字色（高对比，适老阅读） -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_taken">#94A3B8</color>
+
+    <!-- 边框与控件 -->
+    <color name="border_color">#CBD5E1</color>
+    <color name="checkbox_tint">@color/teal_500</color>
+
+    <!-- 紧急呼叫（兼容现有引用） -->
+    <color name="emergency_red">@color/red_500</color>
+    <color name="emergency_red_dark">@color/red_600</color>
 </resources>

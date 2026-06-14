@@ -1,7 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.MEDICINE" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+    <style name="Base.Theme.MEDICINE" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/teal_400</item>
+        <item name="colorPrimaryDark">@color/teal_600</item>
+        <item name="colorPrimaryVariant">@color/teal_600</item>
+        <item name="colorAccent">@color/teal_400</item>
+        <item name="colorSecondary">@color/teal_400</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
+
 </resources>

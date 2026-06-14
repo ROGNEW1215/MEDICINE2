@@ -1,69 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_medication"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
     app:cardBackgroundColor="@color/card_background"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="4dp"
-    app:cardUseCompatPadding="true">
+    app:cardCornerRadius="@dimen/card_radius_3xl"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/slate_100"
+    app:strokeWidth="1dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:minHeight="72dp"
+        android:minHeight="80dp"
         android:orientation="horizontal"
-        android:padding="12dp">
+        android:padding="20dp">
 
-        <CheckBox
-            android:id="@+id/cb_taken"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/checkbox_tint"
-            android:contentDescription="@string/label_taken" />
+        <FrameLayout
+            android:id="@+id/fl_icon_container"
+            android:layout_width="@dimen/icon_container_size"
+            android:layout_height="@dimen/icon_container_size"
+            android:background="@drawable/bg_med_icon_container">
 
-        <ImageView
-            android:id="@+id/iv_med_icon"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="4dp"
-            android:contentDescription="@string/med_icon_desc"
-            android:scaleType="centerInside" />
+            <ImageView
+                android:id="@+id/iv_med_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/med_icon_desc"
+                android:scaleType="centerInside" />
+
+        </FrameLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="12dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_med_name"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/text_primary"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_med_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/slate_800"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_remind_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_time_badge"
+                    android:textColor="@color/red_600"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/tv_dosage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:textColor="@color/text_secondary"
-                android:textSize="20sp" />
+                android:textColor="@color/slate_500"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
+        <ImageButton
+            android:id="@+id/cb_taken"
+            android:layout_width="@dimen/check_btn_size"
+            android:layout_height="@dimen/check_btn_size"
+            android:background="@drawable/bg_check_in_circle"
+            android:contentDescription="@string/btn_take_med"
+            android:elevation="6dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_check_stroke"
+            app:tint="@color/white" />
+
         <TextView
-            android:id="@+id/tv_remind_time"
+            android:id="@+id/tv_taken_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/primary"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            android:text="@string/label_checked_in"
+            android:textColor="@color/teal_600"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
 
     </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

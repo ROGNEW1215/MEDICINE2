@@ -7,8 +7,24 @@
 
     <!-- Main -->
     <string name="welcome_format">您好，%1$s</string>
+    <string name="greeting_morning">%1$s，早上好！</string>
+    <string name="greeting_noon">%1$s，中午好！</string>
+    <string name="greeting_afternoon">%1$s，下午好！</string>
+    <string name="greeting_evening">%1$s，晚上好！</string>
+    <string name="today_progress_label">今日服药进度</string>
+    <string name="today_progress_format">今日已服 %1$d/%2$d 次</string>
+    <string name="today_progress_suffix">/ %1$d 次</string>
+    <string name="progress_percent_format">%1$d%%</string>
+    <string name="label_checked_in">已打卡</string>
+    <string name="btn_record_bp">记录血压</string>
+    <string name="btn_emergency_sos">紧急呼救</string>
+    <string name="todo_tasks_title">待办任务</string>
+    <string name="nav_home">首页</string>
+    <string name="nav_health">健康记录</string>
+    <string name="nav_settings">设置</string>
+    <string name="btn_add_short">+ 添加</string>
     <string name="today_meds_title">今日用药计划</string>
-    <string name="empty_med_list">暂无用药计划，请点击下方添加</string>
+    <string name="empty_med_list">暂无待办，点击右上角添加</string>
     <string name="btn_add_med">添加药品</string>
     <string name="btn_settings">设置</string>
     <string name="btn_emergency">紧急呼叫</string>
@@ -23,6 +39,7 @@
     <string name="delete_success">删除成功</string>
     <string name="update_success">修改成功</string>
     <string name="label_taken">已服药</string>
+    <string name="btn_take_med">服药</string>
     <string name="btn_health_log">健康打卡</string>
     <string name="btn_history">服药历史</string>
     <string name="health_log_title">健康打卡记录</string>

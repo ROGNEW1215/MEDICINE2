@@ -1,5 +1,6 @@
 package com.example.medicine;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,8 +30,11 @@ public class HealthLogActivity extends AppCompatActivity {
         etSystolic = findViewById(R.id.et_systolic);
         etDiastolic = findViewById(R.id.et_diastolic);
         Button btnSave = findViewById(R.id.btn_save_health);
+        Button btnViewHistory = findViewById(R.id.btn_view_history);
 
         btnSave.setOnClickListener(v -> saveHealthRecord());
+        btnViewHistory.setOnClickListener(v ->
+                startActivity(new Intent(this, HistoryActivity.class)));
     }
 
     private void saveHealthRecord() {

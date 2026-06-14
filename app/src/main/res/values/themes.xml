@@ -1,10 +1,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Base.Theme.MEDICINE" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryDark">@color/primary_dark</item>
+
+    <style name="Base.Theme.MEDICINE" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- 主色 -->
+        <item name="colorPrimary">@color/teal_500</item>
+        <item name="colorPrimaryDark">@color/teal_600</item>
+        <item name="colorPrimaryVariant">@color/teal_600</item>
+        <item name="colorAccent">@color/teal_400</item>
+        <item name="colorSecondary">@color/teal_400</item>
+
+        <!-- 表面与背景 -->
+        <item name="colorSurface">@color/card_background</item>
+        <item name="android:colorBackground">@color/background</item>
         <item name="android:windowBackground">@color/background</item>
+
+        <!-- 文字 -->
         <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- 状态栏：透明 + 浅色图标（配合 teal 顶栏或沉浸式内容） -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 
     <style name="Theme.MEDICINE" parent="Base.Theme.MEDICINE" />
+
 </resources>
