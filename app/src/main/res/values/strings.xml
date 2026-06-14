@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">银发族用药管家</string>
+
+    <!-- Splash -->
+    <string name="splash_welcome">欢迎使用用药管家</string>
+    <string name="app_logo_desc">应用图标</string>
+
+    <!-- Main -->
+    <string name="welcome_format">您好，%1$s</string>
+    <string name="today_meds_title">今日用药计划</string>
+    <string name="empty_med_list">暂无用药计划，请点击下方添加</string>
+    <string name="btn_add_med">添加药品</string>
+    <string name="btn_settings">设置</string>
+    <string name="btn_emergency">紧急呼叫</string>
+    <string name="elder_avatar_desc">长辈头像</string>
+    <string name="med_icon_desc">药品图标</string>
+
+    <!-- Add Med -->
+    <string name="add_med_title">添加药品</string>
+    <string name="edit_med_title">编辑药品</string>
+    <string name="confirm_delete_title">删除确认</string>
+    <string name="confirm_delete_message">确定要删除该用药提醒吗？</string>
+    <string name="delete_success">删除成功</string>
+    <string name="update_success">修改成功</string>
+    <string name="label_taken">已服药</string>
+    <string name="btn_health_log">健康打卡</string>
+    <string name="btn_history">服药历史</string>
+    <string name="health_log_title">健康打卡记录</string>
+    <string name="label_systolic">收缩压 (mmHg)</string>
+    <string name="label_diastolic">舒张压 (mmHg)</string>
+    <string name="hint_systolic">如：120</string>
+    <string name="hint_diastolic">如：80</string>
+    <string name="health_save_success">健康记录已保存</string>
+    <string name="error_invalid_blood_pressure">请输入有效的血压数值</string>
+    <string name="history_title">服药历史</string>
+    <string name="history_empty">暂无服药打卡记录</string>
+    <string name="history_item_format">%1$s · %2$s</string>
+    <string name="label_med_name">药名</string>
+    <string name="hint_med_name">请输入药品名称</string>
+    <string name="label_dosage">用量</string>
+    <string name="hint_dosage">如：1片、5ml</string>
+    <string name="label_remind_time">提醒时间</string>
+    <string name="hint_remind_time">如：08:30</string>
+    <string name="label_icon_type">药品类型</string>
+    <string name="btn_save">保存</string>
+    <string name="save_success">保存成功</string>
+    <string name="error_empty_fields">请填写完整信息</string>
+    <string name="error_invalid_time">时间格式应为 HH:mm</string>
+    <string-array name="icon_types">
+        <item>药片</item>
+        <item>胶囊</item>
+        <item>口服液</item>
+    </string-array>
+
+    <!-- Settings -->
+    <string name="settings_title">个人设置</string>
+    <string name="label_elder_name">长辈姓名</string>
+    <string name="hint_elder_name">请输入姓名</string>
+    <string name="label_emergency_phone">紧急联系人电话</string>
+    <string name="hint_emergency_phone">请输入电话号码</string>
+    <string name="settings_saved">设置已保存</string>
+
+    <!-- Emergency -->
+    <string name="emergency_title">紧急呼叫</string>
+    <string name="emergency_contact_label">紧急联系人</string>
+    <string name="emergency_no_phone">未设置紧急联系人电话，请先在设置中填写</string>
+    <string name="btn_call_emergency">一键拨打</string>
+    <string name="emergency_call_desc">紧急呼叫图标</string>
+
+    <!-- Alarm -->
+    <string name="alarm_action">com.example.medicine.ALARM_ACTION</string>
+    <string name="reminder_channel_id">medication_reminder</string>
+    <string name="reminder_channel_name">用药提醒</string>
+    <string name="reminder_notification_title">该吃药了</string>
+    <string name="reminder_notification_text">请按时服用：%1$s</string>
+    <string name="reminder_toast">提醒：请服用 %1$s</string>
+</resources>
